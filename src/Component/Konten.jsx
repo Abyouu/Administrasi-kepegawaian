@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import '../css/style.css'
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Konten() {
 
@@ -42,24 +42,27 @@ function Konten() {
                             <th>Kartu Pegawai</th>
                         </tr>
                     </thead>
-                    {data.map((item) => (
-                    <tbody>
-                        <tr>
-                            <th >1</th>
-                            <td key={item.nik}>{item.nama}</td>
-                            <td key={item.nik}>{item.nik}</td>
-                            <td key={item.nik}>{item.jenis_kelamin}</td>
-                            <td key={item.nik}>{item.nip}</td>
-                            <td key={item.nik}>{item.tempat_lahir}</td>
-                            <td key={item.nik}>{item.tanggal_lahir}</td>
-                            <td key={item.nik}>{item.kartu_pegawai}</td>
-                            <td>
-                                <Link to='/profile'>Profile</Link>
-                            </td>
-                        </tr>
-                    </tbody>
-                    ))}
-                    <tfoot>
+                    
+                        {data.map((item) => (
+                            <tbody key={item.nik}>
+                                <tr>
+                                    <th>1</th>
+                                    <td>{item.nama}</td>
+                                    <td>{item.nik}</td>
+                                    <td>{item.jenis_kelamin}</td>
+                                    <td>{item.nip}</td>
+                                    <td>{item.tempat_lahir}</td>
+                                    <td>{item.tanggal_lahir}</td>
+                                    <td>{item.kartu_pegawai}</td>
+                                    <td>
+                                        <Link to={`/profile/${item.nik}`}>Profile</Link>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        ))
+                    }
+
+                        < tfoot >
                         <tr>
                             <th></th>
                             <th className="white_foot">Name</th>
@@ -70,9 +73,9 @@ function Konten() {
                             <th className="white_foot">Favorite Color</th>
                         </tr>
                     </tfoot>
-                </table>
-            </div>
+            </table>
         </div>
+        </div >
     )
 }
 

@@ -15,7 +15,7 @@ function App() {
           {/* <Route path="/" element={<Login />}/> */}
           <Route path="/dashboard" element={<Dashboard />}/>
           <Route path="/profile" element={<Profile/>}/>
-      
+          <Route path='profile/:nik' element={<Profile/>}/>
         </Routes>
       </div>
     </Router>
