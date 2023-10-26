@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn.btn-white.bg-white.drawer-button {
+    border: none;
+    margin-right: 30px;
+  }
+
+.judul {
+    height: 15%;
+}
+html, body {
+    height: auto;
+    margin: 0; /* Menghilangkan margin bawaan */
+    background-color: #E8E8E8;
+}

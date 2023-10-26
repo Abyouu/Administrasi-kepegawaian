@@ -1,0 +1,71 @@
+body{
+    background-color: aqua;
+}
+.navbar.bg-base-100{
+    background-color: white;
+}.Judul_dashboard {
+    height: 100px;
+    background: linear-gradient(to top, #00577C, #00B1FD);
+    color: white;
+    font-size: 240%;
+    text-align: center; 
+    font-weight: bold; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.Judul_profile {
+    height: 100px;
+    background: linear-gradient(to top, #00577C, #00B1FD);
+    color: white;
+    font-size: 240%;
+    text-align: center; 
+    font-weight: bold; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.Konten{
+    padding: 5%;
+    height: 600px;
+
+}
+
+
+
+.overflow-x-auto{
+    background-color: white;
+    border-radius: 10px;
+}
+
+tbody{
+    color: black;
+}
+
+.white_foot{
+    color: white;
+}
+.btn.btn-info {
+    color: white;
+    background-color: #00B1FD;
+    margin: 4px;
+    border-radius: 100px;
+    font-size: 11px; /* Ganti dengan ukuran font yang Anda inginkan, misalnya 14px */
+    height: 24px; /* Ganti dengan tinggi yang Anda inginkan, misalnya 24px */
+}
+
+.flex.justify-center.items-center {
+    margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+.card.w-96.bg-base-100.shadow-xl{
+    background-color: white;
+    color: black;
+    padding-top: 6%;
+}
